@@ -13,6 +13,7 @@
             margin: 40px;
          text-align: center;
             line-height: 250%;
+            
            
         }
     
@@ -22,6 +23,9 @@
         input{
        
             display: inline-block;
+        }
+        label{
+         font-weight: bold;
         }
         
     </style>
@@ -43,8 +47,10 @@
     
   
     <form >
-    Name: <input type="text" name="Name" > <br>
-    Email: <input type="email" name="Email"> <br>
+        <label for="Name"> Name: </label>
+    <input type="text" id ="Name"  name="Name" required> <br>
+        <label for = "Email">   Email:</label>
+   <input type="email" id="Email" name="Email"  required> <br>
     Phone: <input type="tel" name = "PhoneNumber" > <br>
  Reason For Inquiry:   <select name = "Reason">
         <option value="Catering"> Catering</option>
