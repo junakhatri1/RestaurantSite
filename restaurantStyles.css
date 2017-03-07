@@ -1,0 +1,39 @@
+header{
+    
+  
+   border-top-style: none;
+ border-color: black;
+    
+}
+h1,footer{
+    text-align: center;
+   
+}
+
+h1{
+  font-family:inherit;
+    font-weight: 200;
+}
+
+nav{
+    text-align: left; 
+word-spacing: 25px;
+   
+}
+
+a{
+  color: navy;
+    text-decoration: none;
+}
+ 
+a:visited{
+   color: deeppink;
+    
+}
+
+a:hover{
+   font-weight: 600;
+}
+a:active{
+    text-decoration-line: none;
+}
