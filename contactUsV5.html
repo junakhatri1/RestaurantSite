@@ -2,9 +2,14 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width =device-width, initial-scale =1">
     
     <title> Contact Us </title>
-    <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+     <link rel="stylesheet" type="text/css" href ="restaurantStyles.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     
     <style>
     
@@ -22,11 +27,12 @@
         input{
        
             display: inline-block;
+            height: 25px
         }
         
         label{
          font-weight: bold;
-
+        
         
         }
         
@@ -44,21 +50,28 @@
     
     
 <body >
-   <header>
-        <h1> SanamLuang Thai Cuisine</h1>
+   <header style = "text-align: center">
+         <div class="jumbotron" >
+        <h2> SanamLuang Thai Cuisine</h2>
+              <p style="color: deeppink">Now open in Claremont!!! </p>
         <hr>
-        </header>
-        <nav>
-    <a href="homePageV2.html"> Home </a>
-      <a href="menuPageV2.html"> Menu</a>  
-       <a href="contactUsV2.html"> ContactUs</a> 
+        </div>
+         <nav class ="nav nav-tabs">
+     <a href=" homePageV5.html"> Home<span class="glyphicon glyphicon-home"></span> </a>
+     <a href = "menuPageV5.html"> Menu </a>
+        
+       <a href="contactUsV5.html"> ContactUs</a> 
             <hr>
-       </nav>
-       
-    <br>
+         </nav>
+        </header>
     
-  <div class="container">
-    <form >
+       
+    <div style =" background-color: lightslategray">
+     <div class="container"  >
+      <div class="row"> 
+          <div class="col-xs-12 col-sm-12"> 
+           
+    <form>
         <label for="Name"> Name: </label>
     <input type="text" id ="Name"  name="Name" required> <br>
 
@@ -91,12 +104,15 @@
                                 <input type="checkbox" name="day" value="F"> F <br>
 
         <div style="text-align: center">
-        <input type="submit" value="Send Request">
+        <input type="submit" value="Send Request" style="height: 30px">
         </div>
 
   </form>
 </div>
-    
+    </div>
+      </div>
+      </div>
+      
    <footer>
         <hr>
         <p> 710 South Indian Hill Blvd, Claremont, CA 91711 </p>
