@@ -12,42 +12,23 @@
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     
     <style>
-    
-        form{
-        
-            margin: 40px;
-         text-align: center;
-            line-height: 250%;
-             }
-    
-        textarea{
-            height: 80px;
-        }
-        
-        input{
-       
-            display: inline-block;
-            height: 25px
-        }
-        
-        label{
-         font-weight: bold;
-        
-        
-        }
-        
-        .container{
-          margin: 0 auto;
-          width: 500px;
-          text-align: right; }
-        
-        #Reason{
-          width: 150px;
 
+    form{
+      overflow: hidden;
+    }
+    
+        .container{
+          
+         width: 500px;
+          background-color: darksalmon;
+        clear: both;
         }
-         .container{
-            background-color: darksalmon;
-        }
+
+label{
+
+  float: left;
+}
+        
        
   </style>
      </head>
@@ -108,48 +89,63 @@
      
        
     
-     <div class="container"  >
+     <div class="container" >
       <div class="row"> 
           <div class="col-xs-12 col-sm-12"> 
            
-    <form>
-        <label for="Name"> Name: </label>
-    <input type="text" id ="Name"  name="Name" required> <br>
+    <form style="margin-top: 20px">
 
-        <label for = "Email">   Email:</label>
-<input type="email" id="Email" name="Email"  required> <br>
+    <div class="form-group">
+        <label for="name"> Name: </label>
+    <input type="text" id ="name"  name="Name" required> <br>
+</div>
 
-<label for = "PhoneNumber"> Phone:</label>
-    <input type="tel" id="PhoneNumber" name = "PhoneNumber" > <br>
+<div class="form-group">
+        <label for = "email">   Email:</label>
+<input type="email" id="email" name="Email"  required> <br>
+</div>
 
-    <label for= "Reason"> Reason for Inquiry: </label>
-  <select name = "Reason" id= "Reason">
+<div class="form-group">
+<label for = "phoneNumber"> Phone:</label>
+    <input type="tel" id="phoneNumber" name = "PhoneNumber" > <br>
+</div>
+
+<div class="form-group">
+    <label for= "reason"> Reason for Inquiry: </label>
+  <select name = "Reason" id= "reason" style="width: 120px">
         <option value="Catering"> Catering</option>
         <option value="Private Party"> Private Party</option>
         <option value="Feedback"> Feedback</option>
         <option value="Other"> Other</option>
           </select>    <br>
+</div>
 
-          <label for = "Information">   Additional Information: </label>
-   <textarea name="Information" id="Information"> </textarea> <br>
+<div class="form-group">
+          <label for = "information">   Additional Information: </label>
+   <textarea name="Information" id="information"> </textarea> <br>
+</div>
 
+<div class="form-group">
    <label for= "answer"> Have you been to the restaurant? </label>
     <input type="radio" id = "answer" name="answer" value="No" checked>No 
      <input type = "radio" name="answer" value= "Yes">Yes <br>
-
+</div>
+  
+  <div class="form-group">
       <label for="days">  Best days to contact you: </label>  
-     <input type="checkbox" id = "days" name="day" value="M"> M 
+     <input type ="checkbox" id = "days" name="day" value="M"> M 
                                 <input type="checkbox" name ="day" value="T">T
                                 <input type="checkbox" name="day" value="W"> W
                                 <input type="checkbox" name="day" value="T">T
                                 <input type="checkbox" name="day" value="F"> F <br>
-
-        <div style="text-align: center">
-        <input type="submit" value="Send Request" style="height: 30px">
-        </div>
-
-  </form>
 </div>
+
+        <div style="text-align: center" class="form-group">
+        <input type="submit" value="Send Request" style="height: 30px">
+        
+</div>
+  </form>
+
     </div>
       </div>
       </div>

@@ -37,3 +37,9 @@ a:hover{
 a:active{
     text-decoration-line: none;
 }
+
+#name, #email, #phoneNumber, #reason, #information, #answer, #days{
+   display: inline-block;
+}
+
+
