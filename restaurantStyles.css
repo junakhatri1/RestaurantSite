@@ -36,6 +36,7 @@ a:hover{
 }
 a:active{
     text-decoration-line: none;
+<<<<<<< HEAD
 }
 
 #name, #email, #phoneNumber, #reason, #information, #answer, #days{
@@ -43,3 +44,6 @@ a:active{
 }
 
 
+=======
+}
+>>>>>>> 6ffc15e02e68adfc53ff3756439299fbc3b62e4d
